@@ -1,8 +1,9 @@
 import './App.css'
+import CustomCalendar from './components/CustomCalendar'
 
 function App() {
   return (
-    <p>Hello World!</p>
+      <CustomCalendar />
   )
 }
 

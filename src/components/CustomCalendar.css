@@ -1,0 +1,45 @@
+.calendar-container {
+  width: 300px;
+}
+
+.calendar-container .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.calendar-container .calendar-header .arrow {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.calendar-container .calendar-header p {
+  font-weight: 500;
+}
+
+.calendar-container .calendar-cell {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.calendar-container .calendar-cell.declined {
+  border: 1px solid #5590e5;
+}
+.calendar-container .calendar-cell.delayed {
+  background-color: #5590e5;
+  opacity: 0.2;
+}
+.calendar-container .calendar-cell.onTrack {
+  background-color: #fd8064;
+  opacity: 0.2;
+}
+.calendar-container .calendar-cell.completed {
+  background-color: #ffc952;
+  opacity: 0.2;
+}
